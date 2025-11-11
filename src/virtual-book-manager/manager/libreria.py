@@ -32,3 +32,9 @@ class Libreria:
     
     def mostra_utenti(self) -> list[Utente]:
         return self.utenti
+    
+    def salva_dati(self, path: str) -> None:
+        pass
+    
+    def carica_dati(self, path: str) -> None:
+        pass
