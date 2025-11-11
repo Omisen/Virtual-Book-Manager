@@ -19,3 +19,5 @@ class Libro:
             "disponibile" : self.disponibile
         }
         
+    def __str__(self):
+        return f"\"{self.titolo}\": ({self.autore})\nPubblicato: {self.anno}\nDisponibile: {"✅" if self.disponibile else "❌"}"

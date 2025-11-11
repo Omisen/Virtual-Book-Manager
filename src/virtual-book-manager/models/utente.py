@@ -3,10 +3,14 @@ from models.libro import Libro
 #endregion
 
 class Utente:
+    
+    id = 0
+    
     def __init__(self, nome: str):
         self.nome = nome
-        self.id_utente: int #! rivedere
         self.libri_prestati: list[Libro]
+        self.id_utente: int = id
+        Utente.id += 1
     
     def prendi_in_prestito(self, libro: Libro) -> None:
         libro.presta()
@@ -19,3 +23,5 @@ class Utente:
     def mostra_libri_prestati(self) -> list[str]:
         return [libro.titolo for libro in self.libri_prestati]
     
+    def __str__(self) -> str:
+        return f"[{self.id_utente}]: {self.nome}"
