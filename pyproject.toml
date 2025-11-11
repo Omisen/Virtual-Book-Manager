@@ -1,0 +1,19 @@
+[project]
+name = "virtual-book-manager"
+version = "0.1.0"
+description = "Un semplice gestore di libreria virtuale scritto in Python, che consente di aggiungere libri, registrare utenti e gestire i prestiti. Progettato con una struttura modulare per separare logica, modelli e interfaccia CLI, e supporta la persistenza dei dati tramite file JSON."
+authors = [
+    {name = "Omisen",email = "simone.conzo@outlook.it"}
+]
+license = {text = "GPL-3.0-or-later"}
+readme = "README.md"
+requires-python = ">=3.13"
+dependencies = [
+]
+
+
+[build-system]
+requires = ["poetry-core>=2.0.0,<3.0.0"]
+build-backend = "poetry.core.masonry.api"
+
+packages = [{ include = "virtual-book-manager", from = "src" }]
