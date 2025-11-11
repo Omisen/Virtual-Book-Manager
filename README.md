@@ -26,6 +26,6 @@ Progetto pensato per esercitarsi con:
 
 ### 🔹 1. Clona il repository
 ```bash
-git clone https://github.com/Omiser/vitual-book-manager.git
+git clone https://github.com/Omiser/Vitual-Book-Manager.git
 cd virtual-book-manger
 ```
