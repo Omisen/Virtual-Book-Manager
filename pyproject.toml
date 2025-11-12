@@ -16,4 +16,4 @@ dependencies = [
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
 
-packages = [{ include = "virtual-book-manager", from = "src" }]
+packages = [{ include = "virtual_book_manager", from = "src" }]

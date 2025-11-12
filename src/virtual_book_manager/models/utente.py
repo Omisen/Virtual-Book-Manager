@@ -1,5 +1,5 @@
 #region Imports
-from models.libro import Libro
+from virtual_book_manager.models.libro import Libro
 #endregion
 
 class Utente:
@@ -8,8 +8,10 @@ class Utente:
     
     def __init__(self, nome: str):
         self.nome = nome
-        self.libri_prestati: list[Libro]
-        self.id_utente: int = id
+        # inizializza la lista dei libri prestati
+        self.libri_prestati: list[Libro] = []
+        # usa la variabile di classe Utente.id per assegnare l'id
+        self.id_utente: int = Utente.id
         Utente.id += 1
     
     def prendi_in_prestito(self, libro: Libro) -> None:
