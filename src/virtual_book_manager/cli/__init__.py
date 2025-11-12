@@ -87,14 +87,15 @@ def gestione_input(libreria: Libreria) -> bool:
             except Exception:
                 from types import SimpleNamespace
 
-                shim = SimpleNamespace()
-                shim.nome = nome
-                shim.id_utente = None
-                shim.libri_prestati = []
-                shim.prendi_in_prestito = lambda l: shim.libri_prestati.append(l)
-                shim.restituisci = lambda l: shim.libri_prestati.remove(l) if l in shim.libri_prestati else None
-                shim.mostra_libri_prestati = lambda: [getattr(x, "titolo", str(x)) for x in shim.libri_prestati]
-                shim.__str__ = lambda: f"[{getattr(shim, 'id_utente', 'n/a')}]: {nome}"
+                shim = SimpleNamespace(
+                    nome = nome,
+                    id_utente = None,
+                    libri_prestati = [],
+                    prendi_in_prestito = lambda l: shim.libri_prestati.append(l),
+                    restituisci = lambda l: shim.libri_prestati.remove(l) if l in shim.libri_prestati else None,
+                    mostra_libri_prestati = lambda: [getattr(x, "titolo", str(x)) for x in shim.libri_prestati],
+                    __str__ = lambda: f"[{getattr(shim, 'id_utente', 'n/a')}]: {nome}"
+                )
                 utente = shim
 
             if hasattr(libreria, "registra_utente"):
