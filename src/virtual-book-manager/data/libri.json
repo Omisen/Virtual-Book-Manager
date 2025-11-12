@@ -1,0 +1,32 @@
+[
+  {
+    "titolo": "Il nome della rosa",
+    "autore": "Umberto Eco",
+    "anno": 1980,
+    "disponibile": true
+  },
+  {
+    "titolo": "1984",
+    "autore": "George Orwell",
+    "anno": 1949,
+    "disponibile": false
+  },
+  {
+    "titolo": "La coscienza di Zeno",
+    "autore": "Italo Svevo",
+    "anno": 1923,
+    "disponibile": true
+  },
+  {
+    "titolo": "Siddhartha",
+    "autore": "Hermann Hesse",
+    "anno": 1922,
+    "disponibile": false
+  },
+  {
+    "titolo": "Il piccolo principe",
+    "autore": "Antoine de Saint-Exupéry",
+    "anno": 1943,
+    "disponibile": true
+  }
+]

@@ -1,0 +1,31 @@
+[
+  {
+    "nome": "Luca Rossi",
+    "id_utente": 1,
+    "libri_prestati": [
+      {
+        "titolo": "1984",
+        "autore": "George Orwell",
+        "anno": 1949,
+        "disponibile": false
+      }
+    ]
+  },
+  {
+    "nome": "Giulia Bianchi",
+    "id_utente": 2,
+    "libri_prestati": [
+      {
+        "titolo": "Siddhartha",
+        "autore": "Hermann Hesse",
+        "anno": 1922,
+        "disponibile": false
+      }
+    ]
+  },
+  {
+    "nome": "Andrea Verdi",
+    "id_utente": 3,
+    "libri_prestati": []
+  }
+]

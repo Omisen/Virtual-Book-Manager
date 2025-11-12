@@ -4,7 +4,7 @@ from models.libro import Libro
 
 class Utente:
     
-    id = 0
+    id = 4
     
     def __init__(self, nome: str):
         self.nome = nome
