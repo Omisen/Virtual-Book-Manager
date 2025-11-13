@@ -1,5 +1,5 @@
 #region Imports
-from virtual_book_manager.models.libro import Libro
+from .libro import Libro
 #endregion
 
 class Utente:

@@ -16,4 +16,10 @@ dependencies = [
 requires = ["poetry-core>=2.0.0,<3.0.0"]
 build-backend = "poetry.core.masonry.api"
 
-packages = [{ include = "virtual_book_manager", from = "src" }]
+# definisce la root come virtual_book_manager
+packages = [{ include = "virtual_book_manager", from = "src" }] 
+
+# crea un poetry script per esegurire direttamente il metodo run nel cli/main.py con la command line ``poetry run virtual_book_manager``
+# ma prima eseguire ``poetry install`` per installare virtual-book-manager ed poterlo eseguire in "/src"
+[tool.poetry.scripts]
+virtual_book_manager = "virtual_book_manager.cli.main:run"
